@@ -1,0 +1,10 @@
+#movies img, #movie img{
+    width: 100%;
+}
+
+#movies .col-md-3 .well{
+    height: 300px;
+}
+#movies .col-md-3 img{
+    height: 240px;
+}
