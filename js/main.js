@@ -30,3 +30,22 @@ function getMovies(searchText) {
             console.log(err);
         })
 }
+function movieSelected(id){
+    sessionStorage.setItem('movieId', id);
+    window.location = 'movie.html';
+    return false
+}
+function getMovie(){
+    let movieId = sessionStorage.getItem('movieId');
+
+
+    axios.get(`https://www.omdbapi.com/?apikey=c270fbb2&i=${movieId}`)
+        .then((response)=>{
+            console.log(response.data)
+            let movie = response.data;
+
+        })
+        .catch((err)=>{
+            console.log(err);
+        })
+}
