@@ -1,16 +1,12 @@
-body{
-    background: #000;
-}
 
 #movies img, #movie img{
     width: 100%;
 }
 
-@media(max-width: 768px){
+@media(min-width: 960px){
 
 #movies .col-md-3 .well{
     height: 390px;
-    display: flex;
 }
 #movies .col-md-3 img{
     height: 240px;
